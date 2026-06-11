@@ -1,360 +1,1039 @@
 <!DOCTYPE html>
-<html lang="bn">
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#1a1a2e">
-<meta name="description" content="iA TECH ZONE - Download latest apps, games and software for free. Fast, secure and trusted download platform.">
-<meta name="keywords" content="iA TECH ZONE, app download, free apps, android apps, apk download, iatechzone">
-<meta name="author" content="iA TECH ZONE">
-<meta property="og:title" content="iA TECH ZONE - Download Latest Apps">
-<meta property="og:description" content="Fast, secure & free app download platform">
-<meta property="og:type" content="website">
-<meta name="twitter:card" content="summary_large_image">
-<title>iA TECH ZONE - Download Latest Apps for Free</title>
-<link href='https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap' rel='stylesheet'>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
-<link rel="icon" type="image/png" href="favicon.png">
-<style>
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, viewport-fit=cover">
+    <meta name="theme-color" content="#000000">
+    <meta name="color-scheme" content="dark light">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://iatz.techzone.com/">
+    
+    <!-- SEO Meta Tags -->
+    <title>iATZ App</title>
+    <meta name="description" content="Download iATZ App APK v2.1.19 - The ultimate premium app with exclusive features. Fast, secure, and optimized for Android. Join 1M+ users.">
+    <meta name="keywords" content="iATZ App, iA TECH ZONE, premium APK, android app download, iATZ APK, official app">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="iATZ App - Official Premium APK Download">
+    <meta property="og:description" content="Download the official iATZ App APK. Premium unlocked features, fast performance, regular updates.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://iatz.techzone.com/">
+    <meta property="og:image" content="https://placehold.co/400x400/1a1a2e/f5b041?text=iATZ+App">
+    <meta property="og:site_name" content="iATZ App">
+    
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="iATZ App APK - Premium Android App">
+    <meta name="twitter:description" content="Download iATZ App official APK with premium features.">
+    <meta name="twitter:image" content="https://placehold.co/400x400/1a1a2e/f5b041?text=iATZ+App">
+    
+    <!-- Schema Markup (SoftwareApplication) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "iATZ App",
+      "applicationCategory": "UtilityApplication",
+      "operatingSystem": "Android 8.0+",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "BDT"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.6",
+        "ratingCount": "362"
+      },
+      "downloadUrl": "https://github.com/iatz100/iatz_official/releases/download/v2.1.19/iATZ.v2.1.19.apk",
+      "version": "2.1.19",
+      "fileSize": "15MB"
+    }
+    </script>
 
-body {
-  font-family: 'Inter', sans-serif;
-  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
-  color: #fff;
-  min-height: 100vh;
-}
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-/* হেডার স্টাইল */
-.header {
-  background: rgba(0,0,0,0.4);
-  backdrop-filter: blur(15px);
-  padding: 18px 40px;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 1000;
-  border-bottom: 1px solid rgba(255,255,255,0.1);
-}
+        /* Light/Dark Mode System Preference */
+        :root {
+            --bg-primary: #000000;
+            --bg-secondary: #0a0a0f;
+            --card-bg: rgba(20, 20, 25, 0.8);
+            --text-primary: #eeeeee;
+            --text-secondary: #cccccc;
+            --gold: #F5B041;
+            --gold-dark: #D4891A;
+            --gold-glow: rgba(245, 176, 65, 0.3);
+            --black-glass: rgba(0, 0, 0, 0.85);
+        }
 
-/* iA TECH ZONE - কালার অ্যানিমেশন + ক্লিক করলে রিলোড */
-.logo {
-  font-size: 28px;
-  font-weight: 800;
-  letter-spacing: 1px;
-  animation: colorChange 3s ease infinite;
-  cursor: pointer;
-  display: inline-block;
-}
+        /* Light mode overrides */
+        @media (prefers-color-scheme: light) {
+            :root {
+                --bg-primary: #f5f5f0;
+                --bg-secondary: #e8e6e0;
+                --card-bg: rgba(255, 255, 245, 0.85);
+                --text-primary: #1a1a1a;
+                --text-secondary: #333333;
+                --black-glass: rgba(255, 255, 245, 0.95);
+            }
+            body {
+                background: var(--bg-primary);
+            }
+            .glass-card, .feature-card, .review-card, .faq-item {
+                background: rgba(255, 255, 245, 0.7);
+                backdrop-filter: blur(12px);
+            }
+            .sidebar {
+                background: rgba(245, 245, 235, 0.98);
+            }
+            .sidebar ul li a {
+                color: #1a1a1a;
+            }
+            .stats, .btn-download .btn-content {
+                color: #1a1a1a;
+            }
+            .stat-item {
+                color: #b87c00;
+            }
+            .btn-download.complete {
+                background: #2e7d32;
+                color: white;
+            }
+        }
 
-@keyframes colorChange {
-  0% { color: #ff6b6b; }
-  33% { color: #4ecdc4; }
-  66% { color: #ffe66d; }
-  100% { color: #ff6b6b; }
-}
+        body {
+            background: var(--bg-primary);
+            font-family: 'Poppins', 'Segoe UI', system-ui, -apple-system, 'Montserrat', sans-serif;
+            color: var(--text-primary);
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+            transition: background 0.3s ease, color 0.2s ease;
+        }
 
-.logo i {
-  color: #ffffff;
-  margin-right: 8px;
-  animation: none;
-}
+        @keyframes fadeUp {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
 
-/* নেভিগেশন মেনু */
-.nav-menu {
-  float: right;
-  margin-top: 5px;
-}
+        /* Premium Gradient Animation for Header - 7 Color Rotating Premium Effect */
+        @keyframes premiumGradient {
+            0% {
+                background: linear-gradient(90deg, #FF6B6B, #4ECDC4, #45B7D1, #96CEB4, #FFEAA7, #DDA0DD, #FF6B6B);
+                background-size: 400% 100%;
+                -webkit-background-clip: text;
+                background-clip: text;
+                color: transparent;
+            }
+            14% {
+                background: linear-gradient(90deg, #4ECDC4, #45B7D1, #96CEB4, #FFEAA7, #DDA0DD, #FF6B6B, #4ECDC4);
+                background-size: 400% 100%;
+                -webkit-background-clip: text;
+                background-clip: text;
+                color: transparent;
+            }
+            28% {
+                background: linear-gradient(90deg, #45B7D1, #96CEB4, #FFEAA7, #DDA0DD, #FF6B6B, #4ECDC4, #45B7D1);
+                background-size: 400% 100%;
+                -webkit-background-clip: text;
+                background-clip: text;
+                color: transparent;
+            }
+            42% {
+                background: linear-gradient(90deg, #96CEB4, #FFEAA7, #DDA0DD, #FF6B6B, #4ECDC4, #45B7D1, #96CEB4);
+                background-size: 400% 100%;
+                -webkit-background-clip: text;
+                background-clip: text;
+                color: transparent;
+            }
+            57% {
+                background: linear-gradient(90deg, #FFEAA7, #DDA0DD, #FF6B6B, #4ECDC4, #45B7D1, #96CEB4, #FFEAA7);
+                background-size: 400% 100%;
+                -webkit-background-clip: text;
+                background-clip: text;
+                color: transparent;
+            }
+            71% {
+                background: linear-gradient(90deg, #DDA0DD, #FF6B6B, #4ECDC4, #45B7D1, #96CEB4, #FFEAA7, #DDA0DD);
+                background-size: 400% 100%;
+                -webkit-background-clip: text;
+                background-clip: text;
+                color: transparent;
+            }
+            85% {
+                background: linear-gradient(90deg, #FF6B6B, #4ECDC4, #45B7D1, #96CEB4, #FFEAA7, #DDA0DD, #FF6B6B);
+                background-size: 400% 100%;
+                -webkit-background-clip: text;
+                background-clip: text;
+                color: transparent;
+            }
+            100% {
+                background: linear-gradient(90deg, #FF6B6B, #4ECDC4, #45B7D1, #96CEB4, #FFEAA7, #DDA0DD, #FF6B6B);
+                background-size: 400% 100%;
+                -webkit-background-clip: text;
+                background-clip: text;
+                color: transparent;
+            }
+        }
 
-.nav-menu a {
-  color: white;
-  text-decoration: none;
-  margin-left: 25px;
-  transition: 0.3s;
-}
+        @keyframes subtleGlow {
+            0% { text-shadow: 0 0 0px var(--gold); }
+            50% { text-shadow: 0 0 10px var(--gold); }
+            100% { text-shadow: 0 0 0px var(--gold); }
+        }
 
-.nav-menu a:hover {
-  color: #ff6b6b;
-}
+        @keyframes borderPulse {
+            0% { border-color: rgba(245, 176, 65, 0.2); box-shadow: 0 0 0 0 rgba(245, 176, 65, 0.1); }
+            100% { border-color: rgba(245, 176, 65, 0.6); box-shadow: 0 0 0 8px rgba(245, 176, 65, 0); }
+        }
 
-/* হিরো সেকশন */
-.hero {
-  text-align: center;
-  padding: 130px 20px 60px;
-}
+        .glass-card {
+            background: var(--card-bg);
+            backdrop-filter: blur(12px);
+            border-radius: 28px;
+            border: 1px solid rgba(245, 176, 65, 0.2);
+            box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+        }
 
-/* অ্যাপ লোগো */
-.app-logo {
-  width: 140px;
-  height: 140px;
-  margin: 0 auto 25px;
-  background: linear-gradient(135deg, #ff6b6b, #4ecdc4);
-  border-radius: 32px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 20px 40px rgba(0,0,0,0.3);
-}
+        /* fixed header with premium gradient animated logo */
+        .fixed-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            background: var(--black-glass);
+            backdrop-filter: blur(16px);
+            padding: 14px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid rgba(245, 176, 65, 0.3);
+        }
+        .logo {
+            font-size: 1.45rem;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            animation: premiumGradient 3s ease infinite;
+            background: linear-gradient(90deg, #FF6B6B, #4ECDC4, #45B7D1, #96CEB4, #FFEAA7, #DDA0DD, #FF6B6B);
+            background-size: 400% 100%;
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            text-shadow: 0 0 8px rgba(255,255,255,0.1);
+        }
+        .hamburger {
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 32px;
+            height: 24px;
+        }
+        .hamburger span {
+            width: 100%;
+            height: 3px;
+            background: white;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+        @media (prefers-color-scheme: light) {
+            .hamburger span { background: #1a1a1a; }
+        }
 
-.app-logo i {
-  font-size: 75px;
-  color: white;
-}
+        /* Sidebar - Premium Redesign */
+        .sidebar {
+            position: fixed;
+            top: 0;
+            left: -320px;
+            width: 320px;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(0,0,0,0.98) 0%, rgba(10,10,20,0.98) 100%);
+            backdrop-filter: blur(20px);
+            z-index: 1100;
+            transition: left 0.4s cubic-bezier(0.2, 0.9, 0.4, 1.1);
+            border-right: 2px solid var(--gold);
+            box-shadow: 8px 0 40px rgba(245,176,65,0.15);
+        }
+        @media (prefers-color-scheme: light) {
+            .sidebar {
+                background: linear-gradient(135deg, rgba(245,245,240,0.98) 0%, rgba(255,255,250,0.98) 100%);
+            }
+        }
+        .sidebar.open {
+            left: 0;
+        }
+        .sidebar-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 25px 20px 20px;
+            border-bottom: 1px solid rgba(245,176,65,0.3);
+            margin-bottom: 20px;
+        }
+        .sidebar-logo {
+            font-size: 1.3rem;
+            font-weight: 700;
+            background: linear-gradient(90deg, #F5B041, #FFD966);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        .close-sidebar {
+            background: rgba(245,176,65,0.15);
+            border: 1px solid var(--gold);
+            color: var(--gold);
+            font-size: 20px;
+            cursor: pointer;
+            width: 36px;
+            height: 36px;
+            border-radius: 36px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: 0.2s;
+        }
+        .close-sidebar:hover {
+            background: var(--gold);
+            color: black;
+            transform: rotate(90deg);
+        }
+        .sidebar ul {
+            list-style: none;
+            padding: 0 20px;
+        }
+        .sidebar ul li {
+            margin: 8px 0;
+        }
+        .sidebar ul li a {
+            color: var(--text-primary);
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: 500;
+            transition: 0.25s;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 12px 16px;
+            border-radius: 50px;
+            background: rgba(245,176,65,0.05);
+            border: 1px solid transparent;
+        }
+        .sidebar ul li a:hover {
+            background: rgba(245,176,65,0.2);
+            border-color: var(--gold);
+            padding-left: 24px;
+            color: var(--gold);
+        }
+        .sidebar ul li a::before {
+            content: "✦";
+            color: var(--gold);
+            opacity: 0.7;
+        }
+        .overlay {
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,0.7);
+            z-index: 1050;
+            display: none;
+        }
+        .overlay.active {
+            display: block;
+        }
 
-.app-name {
-  font-size: 36px;
-  font-weight: 800;
-  margin-bottom: 10px;
-}
+        /* Right Side - Only Telegram */
+        .floating-socials {
+            position: fixed;
+            right: 12px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 100;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        .social-icon {
+            width: 52px;
+            height: 52px;
+            background: rgba(0,0,0,0.75);
+            backdrop-filter: blur(10px);
+            border-radius: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            font-weight: bold;
+            color: var(--gold);
+            border: 1px solid rgba(245,176,65,0.6);
+            transition: 0.25s;
+            text-decoration: none;
+        }
+        .social-icon:hover {
+            transform: scale(1.12);
+            background: var(--gold);
+            color: black;
+            border-color: white;
+            box-shadow: 0 0 15px var(--gold);
+        }
 
-.app-version {
-  color: #ccc;
-  margin-bottom: 15px;
-}
+        /* Hero */
+        .hero {
+            padding: 100px 20px 40px;
+            text-align: center;
+        }
+        .app-banner {
+            max-width: 260px;
+            width: 70%;
+            margin: 0 auto 20px;
+            border-radius: 56px;
+            box-shadow: 0 20px 40px rgba(245,176,65,0.25);
+            animation: fadeUp 0.6s ease, borderPulse 2s infinite;
+            border: 2px solid var(--gold);
+        }
+        .app-name {
+            font-size: 2.3rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, #fff, var(--gold));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            animation: subtleGlow 2s infinite;
+        }
+        .stats {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 18px;
+            margin: 20px 0;
+            font-size: 0.9rem;
+            background: var(--card-bg);
+            backdrop-filter: blur(8px);
+            border-radius: 60px;
+            padding: 12px 24px;
+            width: fit-content;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .stat-item {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            color: var(--gold);
+            font-weight: 500;
+        }
 
-/* ডাউনলোড বাটন */
-.download-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 12px;
-  background: linear-gradient(45deg, #ff6b6b, #ff8e53);
-  color: white;
-  padding: 16px 48px;
-  border-radius: 60px;
-  font-size: 20px;
-  font-weight: bold;
-  text-decoration: none;
-  margin: 20px 0;
-  transition: all 0.3s;
-  border: none;
-  box-shadow: 0 8px 20px rgba(255,107,107,0.3);
-}
+        /* Download primary */
+        .btn-download {
+            background: linear-gradient(95deg, #D4AF37, #FFD966);
+            border: none;
+            width: 90%;
+            max-width: 380px;
+            padding: 16px 0;
+            border-radius: 80px;
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: #111;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            margin: 20px auto;
+            cursor: pointer;
+            transition: 0.2s;
+            box-shadow: 0 8px 18px rgba(212,175,55,0.4);
+            position: relative;
+            overflow: hidden;
+        }
+        .progress-fill {
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 0%;
+            background: rgba(255,215,0,0.6);
+            transition: width 0.1s linear;
+            z-index: 0;
+        }
+        .btn-content {
+            position: relative;
+            z-index: 2;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .btn-download.complete {
+            background: #2e7d32;
+            color: white;
+        }
 
-.download-btn:hover {
-  transform: scale(1.05);
-  box-shadow: 0 12px 30px rgba(255,107,107,0.5);
-}
+        /* floating bottom button */
+        .float-bottom-download {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: calc(100% - 40px);
+            max-width: 320px;
+            z-index: 1000;
+            transition: 0.3s ease;
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+        }
+        .float-bottom-download.show {
+            opacity: 1;
+            visibility: visible;
+            pointer-events: auto;
+        }
+        .float-btn {
+            background: linear-gradient(95deg, #D4AF37, #FFD966);
+            border-radius: 60px;
+            padding: 12px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            width: 100%;
+            cursor: pointer;
+            border: none;
+            font-size: 1rem;
+        }
 
-.download-btn i {
-  font-size: 24px;
-}
-
-/* কার্ড গ্রিড */
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 30px;
-  padding: 40px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.card {
-  background: rgba(255,255,255,0.08);
-  backdrop-filter: blur(5px);
-  border-radius: 24px;
-  padding: 30px 20px;
-  text-align: center;
-  transition: all 0.3s;
-  border: 1px solid rgba(255,255,255,0.1);
-}
-
-.card:hover {
-  transform: translateY(-8px);
-  background: rgba(255,255,255,0.15);
-  border-color: rgba(255,107,107,0.5);
-}
-
-.card i {
-  font-size: 48px;
-  background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  margin-bottom: 18px;
-}
-
-.card h3 {
-  margin-bottom: 12px;
-  font-size: 22px;
-}
-
-.card p {
-  color: #ccc;
-  font-size: 14px;
-}
-
-/* ফিচার সেকশন */
-.features {
-  background: rgba(0,0,0,0.3);
-  padding: 60px 40px;
-  text-align: center;
-  margin-top: 30px;
-}
-
-.features h2 {
-  font-size: 32px;
-  margin-bottom: 45px;
-  background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-}
-
-.feature-list {
-  display: flex;
-  justify-content: center;
-  gap: 50px;
-  flex-wrap: wrap;
-}
-
-.feature-item {
-  text-align: center;
-  min-width: 150px;
-}
-
-.feature-item i {
-  font-size: 42px;
-  color: #4ecdc4;
-  margin-bottom: 15px;
-}
-
-.feature-item h4 {
-  font-size: 18px;
-  margin-bottom: 8px;
-}
-
-/* ফুটার */
-.footer {
-  text-align: center;
-  padding: 30px 20px;
-  background: rgba(0,0,0,0.5);
-  margin-top: 40px;
-  font-size: 14px;
-  color: #aaa;
-}
-
-.footer a {
-  color: #ff6b6b;
-  text-decoration: none;
-}
-
-.footer a:hover {
-  text-decoration: underline;
-}
-
-/* মোবাইল রেস্পন্সিভ */
-@media (max-width: 768px) {
-  .header { padding: 15px 25px; }
-  .logo { font-size: 20px; }
-  .nav-menu { display: none; }
-  .app-logo { width: 100px; height: 100px; }
-  .app-logo i { font-size: 50px; }
-  .app-name { font-size: 26px; }
-  .download-btn { padding: 12px 32px; font-size: 18px; }
-  .grid { padding: 25px; gap: 20px; }
-  .features h2 { font-size: 26px; }
-}
-</style>
+        /* Sections */
+        section {
+            padding: 60px 20px;
+            border-bottom: 1px solid rgba(245,176,65,0.15);
+        }
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 35px;
+            background: linear-gradient(135deg, #fff, var(--gold));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            display: inline-block;
+            width: 100%;
+        }
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 20px;
+        }
+        .feature-card {
+            background: var(--card-bg);
+            backdrop-filter: blur(10px);
+            padding: 20px 12px;
+            border-radius: 24px;
+            text-align: center;
+            border: 1px solid rgba(245,176,65,0.2);
+            transition: 0.2s;
+            font-weight: 500;
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--gold);
+        }
+        
+        /* Screenshot Slider - Unified Frame with Auto Slide */
+        .screenshot-frame {
+            max-width: 320px;
+            margin: 0 auto;
+            position: relative;
+            border-radius: 48px;
+            background: linear-gradient(135deg, rgba(245,176,65,0.2), rgba(0,0,0,0.5));
+            padding: 12px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+        }
+        .phone-mock {
+            background: #111;
+            border-radius: 36px;
+            overflow: hidden;
+            position: relative;
+            aspect-ratio: 9 / 19;
+            max-height: 580px;
+        }
+        .slider-unified {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            overflow: hidden;
+            border-radius: 32px;
+        }
+        .slides-container {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+            height: 100%;
+        }
+        .slide {
+            min-width: 100%;
+            height: 100%;
+        }
+        .slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        .slider-dots {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 10px;
+            background: rgba(255,255,255,0.3);
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .dot.active {
+            background: var(--gold);
+            width: 28px;
+        }
+        .slider-nav {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 12px;
+            pointer-events: none;
+            z-index: 10;
+        }
+        .nav-btn {
+            background: rgba(0,0,0,0.7);
+            backdrop-filter: blur(8px);
+            border: 1px solid var(--gold);
+            color: var(--gold);
+            width: 40px;
+            height: 40px;
+            border-radius: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            pointer-events: auto;
+            transition: 0.2s;
+            font-size: 20px;
+        }
+        .nav-btn:hover {
+            background: var(--gold);
+            color: black;
+        }
+        
+        .review-card {
+            background: var(--card-bg);
+            border-radius: 28px;
+            padding: 20px;
+            margin: 20px 0;
+            border: 1px solid rgba(245,176,65,0.15);
+        }
+        .faq-item {
+            background: var(--card-bg);
+            margin: 16px 0;
+            border-radius: 28px;
+            padding: 0 18px;
+            border: 1px solid rgba(245,176,65,0.1);
+        }
+        .faq-question {
+            font-weight: bold;
+            padding: 20px 0;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            color: var(--gold);
+        }
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: 0.3s;
+            padding: 0;
+            color: var(--text-secondary);
+        }
+        .faq-item.active .faq-answer {
+            max-height: 200px;
+            padding-bottom: 18px;
+        }
+        footer {
+            padding: 30px 20px;
+            text-align: center;
+            font-size: 0.8rem;
+            color: #aaa;
+        }
+        @media (max-width: 640px) {
+            .hero { padding-top: 100px; }
+            .stats { gap: 12px; font-size: 0.7rem; }
+            .app-name { font-size: 1.8rem; }
+            .screenshot-frame { max-width: 280px; }
+        }
+    </style>
 </head>
 <body>
 
-<!-- হেডার -->
-<div class="header">
-  <div class="logo" onclick="location.reload();">
-    <i class="fas fa-microchip"></i> iA TECH ZONE
-  </div>
-  <div class="nav-menu">
-    <a href="#">হোম</a>
-    <a href="#apps">অ্যাপস</a>
-    <a href="#contact">যোগাযোগ</a>
-  </div>
+<header class="fixed-header">
+    <div class="logo">iA TECH ZONE</div>
+    <button class="hamburger" id="hamburgerBtn">
+        <span></span><span></span><span></span>
+    </button>
+</header>
+
+<aside class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+        <span class="sidebar-logo">iA TECH ZONE</span>
+        <button class="close-sidebar" id="closeSidebarBtn">✕</button>
+    </div>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#screenshots">Screenshots</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#faq">FAQ</a></li>
+    </ul>
+</aside>
+<div class="overlay" id="overlay"></div>
+
+<!-- Right Side Floating - Only Telegram -->
+<div class="floating-socials">
+    <a href="https://t.me/Our_Official_Channel" target="_blank" class="social-icon" aria-label="Telegram">💬</a>
 </div>
 
-<!-- হিরো সেকশন -->
-<div class="hero">
-  <div class="app-logo">
-    <i class="fas fa-mobile-alt"></i>
-  </div>
-  <div class="app-name">iA Downloader</div>
-  <div class="app-version">Version 2.0.1 | 28 MB | Android 8+</div>
-  
-  <a href="#" class="download-btn" id="downloadBtn">
-    <i class="fas fa-download"></i> Download Now
-  </a>
-  <p style="font-size: 13px; color: #aaa;">⭐ 4.8 Rating | 1M+ Downloads</p>
+<!-- Hero Section - iATZ App -->
+<section id="home" class="hero">
+    <img src="https://placehold.co/400x400/1a1a2e/f5b041?text=iATZ+APP" alt="iATZ App Banner" class="app-banner">
+    <h1 class="app-name">iATZ App</h1>
+    <div class="stats">
+        <div class="stat-item">Version: 2.1.19</div>
+        <div class="stat-item">Size: 15 MB</div>
+        <div class="stat-item">Rating: 4.6 ★</div>
+        <div class="stat-item">Downloads: 1M+</div>
+    </div>
+    <!-- Main download button -->
+    <button class="btn-download" id="downloadBtn">
+        <div class="progress-fill" id="progressFill"></div>
+        <span class="btn-content">Download Android App</span>
+    </button>
+</section>
+
+<div style="padding: 0 20px 20px; text-align:center;">
+    <div class="glass-card" style="padding: 15px;">
+        Fast Performance | Regular Updates | 100% Safe
+    </div>
 </div>
 
-<!-- অ্যাপ ফিচার কার্ড -->
-<div class="grid" id="apps">
-  <div class="card">
-    <i class="fas fa-shield-alt"></i>
-    <h3>100% Safe</h3>
-    <p>Virus free & secure download</p>
-  </div>
-  <div class="card">
-    <i class="fas fa-bolt"></i>
-    <h3>Fast Download</h3>
-    <p>High speed servers</p>
-  </div>
-  <div class="card">
-    <i class="fas fa-sync-alt"></i>
-    <h3>Auto Updates</h3>
-    <p>Get latest version instantly</p>
-  </div>
-  <div class="card">
-    <i class="fas fa-headset"></i>
-    <h3>24/7 Support</h3>
-    <p>We're always here to help</p>
-  </div>
-</div>
+<!-- Features Section -->
+<section id="features">
+    <h2 class="section-title">✨ App Features</h2>
+    <div class="features-grid">
+        <div class="feature-card">⚡ Fast Download</div>
+        <div class="feature-card">🔒 Secure APK</div>
+        <div class="feature-card">🔄 Auto Updates</div>
+        <div class="feature-card">🏆 Premium Unlocked</div>
+        <div class="feature-card">🌙 Dark/Light Mode</div>
+        <div class="feature-card">📱 Optimized UI</div>
+    </div>
+</section>
 
-<!-- কেন এই অ্যাপ -->
-<div class="features">
-  <h2>✨ Why This App?</h2>
-  <div class="feature-list">
-    <div class="feature-item"><i class="fas fa-gem"></i><h4>Premium Features</h4></div>
-    <div class="feature-item"><i class="fas fa-rocket"></i><h4>Ultra Fast</h4></div>
-    <div class="feature-item"><i class="fas fa-hand-holding-heart"></i><h4>User Friendly</h4></div>
-    <div class="feature-item"><i class="fas fa-wifi"></i><h4>Offline Works</h4></div>
-  </div>
-</div>
+<!-- Screenshots Gallery with Unified Frame & Auto Slide -->
+<section id="screenshots">
+    <h2 class="section-title">📸 App Screenshots</h2>
+    <div class="screenshot-frame">
+        <div class="phone-mock">
+            <div class="slider-unified">
+                <div class="slides-container" id="unifiedSlider">
+                    <div class="slide"><img src="https://placehold.co/300x600/1a1a2e/f5b041?text=Home+Screen" alt="Screenshot 1"></div>
+                    <div class="slide"><img src="https://placehold.co/300x600/1a1a2e/f5b041?text=Dashboard" alt="Screenshot 2"></div>
+                    <div class="slide"><img src="https://placehold.co/300x600/1a1a2e/f5b041?text=Premium+Features" alt="Screenshot 3"></div>
+                    <div class="slide"><img src="https://placehold.co/300x600/1a1a2e/f5b041?text=Settings+Panel" alt="Screenshot 4"></div>
+                    <div class="slide"><img src="https://placehold.co/300x600/1a1a2e/f5b041?text=Gaming+Mode" alt="Screenshot 5"></div>
+                </div>
+                <div class="slider-nav">
+                    <button class="nav-btn" id="prevSlideUnified">◀</button>
+                    <button class="nav-btn" id="nextSlideUnified">▶</button>
+                </div>
+            </div>
+        </div>
+        <div class="slider-dots" id="sliderDots"></div>
+    </div>
+</section>
 
-<!-- ফুটার -->
-<div class="footer" id="contact">
-  <p>© 2026 iA TECH ZONE. All rights reserved.</p>
-  <p style="margin-top: 8px;">
-    <a href="#">About</a> | 
-    <a href="#">Contact</a> | 
-    <a href="#">Privacy Policy</a> | 
-    <a href="#">DMCA</a>
-  </p>
-  <p style="margin-top: 10px;">
-    <i class="fab fa-facebook"></i> &nbsp;
-    <i class="fab fa-twitter"></i> &nbsp;
-    <i class="fab fa-instagram"></i> &nbsp;
-    <i class="fab fa-github"></i>
-  </p>
+<!-- User Reviews -->
+<section id="reviews">
+    <h2 class="section-title">⭐ User Reviews</h2>
+    <div class="review-card">
+        <div>👤 <strong>iATZ_User1</strong> <span>★★★★★</span></div>
+        <p>“Best app experience! Smooth and premium features are amazing.”</p>
+    </div>
+    <div class="review-card">
+        <div>👤 <strong>TechLover</strong> <span>★★★★★</span></div>
+        <p>“Regular updates and super fast. iATZ is my go-to app now.”</p>
+    </div>
+    <div class="review-card">
+        <div>👤 <strong>ProAndroid</strong> <span>★★★★☆</span></div>
+        <p>“Very stable and secure APK. Highly recommended!”</p>
+    </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+    <h2 class="section-title">❓ FAQ</h2>
+    <div class="faq-item">
+        <div class="faq-question">🔧 How to install iATZ APK? <span>+</span></div>
+        <div class="faq-answer">Go to Settings → Security → Enable "Unknown Sources". Download APK, tap to install.</div>
+    </div>
+    <div class="faq-item">
+        <div class="faq-question">🛡️ Is iATZ App safe? <span>+</span></div>
+        <div class="faq-answer">100% safe, scanned with Play Protect and regular security checks. No malware.</div>
+    </div>
+    <div class="faq-item">
+        <div class="faq-question">📱 Does it support Android 13/14? <span>+</span></div>
+        <div class="faq-answer">Yes! Fully optimized for Android 8+ up to Android 14.</div>
+    </div>
+    <div class="faq-item">
+        <div class="faq-question">🔄 How to update iATZ App? <span>+</span></div>
+        <div class="faq-answer">App will notify you, or download latest version from our official page.</div>
+    </div>
+</section>
+
+<footer id="contact">
+    <p>© 2026 iATZ Official APK</p>
+</footer>
+
+<div class="float-bottom-download" id="floatDownloadBtn">
+    <button class="float-btn" id="floatBtnAction">Download Android App</button>
 </div>
 
 <script>
-// ডাউনলোড কাউন্টার (লোকাল স্টোরেজ)
-let downloadCount = localStorage.getItem('iatechzone_downloads') || 1247;
-document.getElementById('downloadBtn').addEventListener('click', function(e) {
-  downloadCount++;
-  localStorage.setItem('iatechzone_downloads', downloadCount);
-  console.log('Total Downloads: ' + downloadCount);
-});
+    // Hamburger Menu + Close Button
+    const hamburger = document.getElementById('hamburgerBtn');
+    const sidebar = document.getElementById('sidebar');
+    const overlay = document.getElementById('overlay');
+    const closeSidebarBtn = document.getElementById('closeSidebarBtn');
+    
+    function closeMenu() { sidebar.classList.remove('open'); overlay.classList.remove('active'); }
+    function openMenu() { sidebar.classList.add('open'); overlay.classList.add('active'); }
+    
+    hamburger.addEventListener('click', openMenu);
+    closeSidebarBtn.addEventListener('click', closeMenu);
+    overlay.addEventListener('click', closeMenu);
+    document.querySelectorAll('.sidebar a').forEach(link => link.addEventListener('click', closeMenu));
 
-// পেজ ভিউ কাউন্টার
-let pageViews = localStorage.getItem('iatechzone_views') || 0;
-pageViews++;
-localStorage.setItem('iatechzone_views', pageViews);
-console.log('Page Views: ' + pageViews);
+    // Unified Screenshot Slider with Auto Slide
+    const sliderContainer = document.getElementById('unifiedSlider');
+    const slides = document.querySelectorAll('.slide');
+    const prevBtnUnified = document.getElementById('prevSlideUnified');
+    const nextBtnUnified = document.getElementById('nextSlideUnified');
+    const dotsContainer = document.getElementById('sliderDots');
+    let currentIndex = 0;
+    let autoInterval;
+    const totalSlides = slides.length;
+
+    function updateSlider() {
+        sliderContainer.style.transform = `translateX(-${currentIndex * 100}%)`;
+        document.querySelectorAll('.dot').forEach((dot, idx) => {
+            if (idx === currentIndex) dot.classList.add('active');
+            else dot.classList.remove('active');
+        });
+    }
+
+    function nextSlide() {
+        currentIndex = (currentIndex + 1) % totalSlides;
+        updateSlider();
+        resetAutoSlide();
+    }
+
+    function prevSlide() {
+        currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+        updateSlider();
+        resetAutoSlide();
+    }
+
+    function resetAutoSlide() {
+        clearInterval(autoInterval);
+        autoInterval = setInterval(() => {
+            nextSlide();
+        }, 4000);
+    }
+
+    // Create dots
+    for (let i = 0; i < totalSlides; i++) {
+        const dot = document.createElement('div');
+        dot.classList.add('dot');
+        if (i === 0) dot.classList.add('active');
+        dot.addEventListener('click', () => {
+            currentIndex = i;
+            updateSlider();
+            resetAutoSlide();
+        });
+        dotsContainer.appendChild(dot);
+    }
+
+    prevBtnUnified.addEventListener('click', prevSlide);
+    nextBtnUnified.addEventListener('click', nextSlide);
+    sliderContainer.parentElement.addEventListener('mouseenter', () => clearInterval(autoInterval));
+    sliderContainer.parentElement.addEventListener('mouseleave', resetAutoSlide);
+    resetAutoSlide();
+
+    // Download Manager
+    const APK_URL = "https://github.com/iatz100/iatz_official/releases/download/v2.1.19/iATZ.v2.1.19.apk";
+    let downloadInProgress = false;
+
+    const mainBtn = document.getElementById('downloadBtn');
+    const progressFill = document.getElementById('progressFill');
+    const btnContentSpan = mainBtn.querySelector('.btn-content');
+    const floatContainer = document.getElementById('floatDownloadBtn');
+    const floatBtn = document.getElementById('floatBtnAction');
+
+    function resetButton(buttonElement, isFloat = false) {
+        if (isFloat && floatBtn) {
+            floatBtn.innerHTML = 'Download Android App';
+            floatBtn.disabled = false;
+        } else if (mainBtn) {
+            progressFill.style.width = '0%';
+            btnContentSpan.innerHTML = 'Download Android App';
+            mainBtn.classList.remove('complete');
+            mainBtn.disabled = false;
+        }
+    }
+
+    function formatBytes(bytes, decimals = 1) {
+        if (bytes === 0) return '0 Bytes';
+        const k = 1024;
+        const i = Math.floor(Math.log(bytes) / Math.log(k));
+        return parseFloat((bytes / Math.pow(k, i)).toFixed(decimals)) + ' ' + ['Bytes', 'KB', 'MB', 'GB'][i];
+    }
+
+    async function startDownload() {
+        if (downloadInProgress) return;
+        downloadInProgress = true;
+
+        const updateProgress = (percent, speed, downloaded, total) => {
+            if (mainBtn) {
+                progressFill.style.width = percent + '%';
+                let speedText = speed ? ` ${speed}` : '';
+                let sizeText = (downloaded && total) ? `${formatBytes(downloaded)} / ${formatBytes(total)}` : '';
+                btnContentSpan.innerHTML = `⏳ Downloading... ${Math.round(percent)}% ${speedText} ${sizeText}`;
+            }
+            if (floatBtn) {
+                floatBtn.innerHTML = `⏳ ${Math.round(percent)}% ${speed || ''}`;
+            }
+        };
+
+        const completeDownload = () => {
+            downloadInProgress = false;
+            if (mainBtn) {
+                progressFill.style.width = '100%';
+                btnContentSpan.innerHTML = 'Download Complete ✓';
+                mainBtn.classList.add('complete');
+            }
+            if (floatBtn) {
+                floatBtn.innerHTML = 'Complete ✓';
+                setTimeout(() => { if(floatBtn && !downloadInProgress) resetButton(null, true); }, 2000);
+            }
+            setTimeout(() => { if(mainBtn && !downloadInProgress) resetButton(mainBtn, false); }, 3000);
+        };
+
+        const errorDownload = (errMsg) => {
+            downloadInProgress = false;
+            if (mainBtn) {
+                btnContentSpan.innerHTML = 'Download Failed - Retry';
+                progressFill.style.width = '0%';
+                mainBtn.disabled = false;
+            }
+            if (floatBtn) {
+                floatBtn.innerHTML = 'Retry';
+                floatBtn.disabled = false;
+            }
+            alert(errMsg || 'Download failed! Check network and retry.');
+            setTimeout(() => {
+                if(mainBtn && !downloadInProgress) resetButton(mainBtn, false);
+                if(floatBtn && !downloadInProgress) resetButton(null, true);
+            }, 1500);
+        };
+
+        try {
+            const response = await fetch(APK_URL);
+            if (!response.ok) throw new Error(`HTTP ${response.status}`);
+            const contentLength = response.headers.get('content-length');
+            const total = contentLength ? parseInt(contentLength, 10) : 28 * 1024 * 1024;
+            const reader = response.body.getReader();
+            const chunks = [];
+            let receivedLength = 0;
+            let lastTimestamp = Date.now();
+            let lastLoaded = 0;
+
+            while (true) {
+                const { done, value } = await reader.read();
+                if (done) break;
+                chunks.push(value);
+                receivedLength += value.length;
+                const percent = (receivedLength / total) * 100;
+
+                const now = Date.now();
+                let speedBps = 0;
+                if (now - lastTimestamp >= 200) {
+                    const diffBytes = receivedLength - lastLoaded;
+                    const timeSec = (now - lastTimestamp) / 1000;
+                    speedBps = diffBytes / timeSec;
+                    lastTimestamp = now;
+                    lastLoaded = receivedLength;
+                }
+                let speedText = speedBps > 0 ? `(${formatBytes(speedBps)}/s)` : '';
+                updateProgress(percent, speedText, receivedLength, total);
+            }
+
+            const blob = new Blob(chunks);
+            const downloadUrl = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = downloadUrl;
+            a.download = 'iATZ.v2.1.19.apk';
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(downloadUrl);
+            completeDownload();
+        } catch (err) {
+            console.error(err);
+            errorDownload('Network error. Please retry download.');
+        } finally {
+            downloadInProgress = false;
+            if(mainBtn) mainBtn.disabled = false;
+            if(floatBtn) floatBtn.disabled = false;
+        }
+    }
+
+    function handleDownload() { if(!downloadInProgress) startDownload(); }
+    mainBtn.addEventListener('click', handleDownload);
+    floatBtn.addEventListener('click', handleDownload);
+
+    // floating bottom button visibility on scroll
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 250) floatContainer.classList.add('show');
+        else floatContainer.classList.remove('show');
+    });
+    
+    // FAQ accordion
+    document.querySelectorAll('.faq-item').forEach(item => {
+        const question = item.querySelector('.faq-question');
+        question.addEventListener('click', () => {
+            item.classList.toggle('active');
+        });
+    });
+
+    window.addEventListener('load', () => {
+        resetButton(mainBtn, false);
+        resetButton(null, true);
+    });
 </script>
 </body>
 </html>
